@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prices List - Mita's Commission</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="buyer-mode">
+
+    <header>
+        <a href="index.html" class="back-link">&larr; Kembali</a>
+        <h1 id="main-title">PRICES LIST</h1>
+        <button id="logout-btn" class="admin-only">Logout</button>
+    </header>
+
+    <main>
+        <div class="price-section">
+            <h2>Contoh Harga 1</h2>
+            
+            <p class="buyer-only">Ini adalah deskripsi harga yang dilihat pembeli.</p>
+            <img src="https://via.placeholder.com/300x200?text=Contoh+Gambar" alt="Contoh Harga" class="buyer-only">
+
+            <div class="admin-only admin-editor">
+                <p>Edit Deskripsi:</p>
+                <textarea>Ini adalah deskripsi harga yang dilihat pembeli.</textarea>
+                <p>Upload Gambar Contoh:</p>
+                <button class="upload-btn">+</button>
+                <p class="warning-text">(Upload tidak akan tersimpan. Ini hanya prototipe visual.)</p>
+            </div>
+        </div>
+
+        <div class="price-section">
+            <h2>Contoh Harga 2</h2>
+            
+            <p class="buyer-only">Deskripsi untuk jasa lainnya.</p>
+            <img src="https://via.placeholder.com/300x200?text=Contoh+Gambar+2" alt="Contoh Harga" class="buyer-only">
+
+            <div class="admin-only admin-editor">
+                <p>Edit Deskripsi:</p>
+                <textarea>Deskripsi untuk jasa lainnya.</textarea>
+                <p>Upload Gambar Contoh:</p>
+                <button class="upload-btn">+</button>
+                <p class="warning-text">(Upload tidak akan tersimpan. Ini hanya prototipe visual.)</p>
+            </div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
