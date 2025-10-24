@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commission Done - Mita's Commission</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="buyer-mode">
+
+    <header>
+        <a href="index.html" class="back-link">&larr; Kembali</a>
+        <h1 id="main-title">COMMISSION DONE</h1>
+        <button id="logout-btn" class="admin-only">Logout</button>
+    </header>
+
+    <main>
+        <div class="admin-only admin-editor">
+            <p>Upload Karya Baru:</p>
+            <button class="upload-btn">+</button>
+            <p class="warning-text">(Upload tidak akan tersimpan. Ini hanya prototipe visual.)</p>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200x300?text=Karya+1" alt="Karya 1" class="downloadable-img" data-password="1234">
+                
+                <p class="buyer-only">Karya untuk Client A</p>
+                
+                <div class="admin-only admin-controls">
+                    <input type="text" value="Karya untuk Client A">
+                    <p>Sandi: <span class="password-display">1234</span></p>
+                    <button class="copy-pass-btn">Salin Sandi</button>
+                    <button class="edit-pass-btn">Edit Sandi</button>
+                    <p class="warning-text">(Edit sandi hanya visual, tidak tersimpan.)</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200x300?text=Karya+2" alt="Karya 2" class="downloadable-img" data-password="5678">
+                
+                <p class="buyer-only">Karya untuk Client B</p>
+
+                <div class="admin-only admin-controls">
+                    <input type="text" value="Karya untuk Client B">
+                    <p>Sandi: <span class="password-display">5678</span></p>
+                    <button class="copy-pass-btn">Salin Sandi</button>
+                    <button class="edit-pass-btn">Edit Sandi</button>
+                    <p class="warning-text">(Edit sandi hanya visual, tidak tersimpan.)</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
