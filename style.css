@@ -214,6 +214,110 @@ h1 {
 .admin-controls .edit-pass-btn {
     background-color: #f44336;
 }
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Galeri Commission Done */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 kolom */
+    gap: 15px;
+}
+.gallery-item img {
+    cursor: pointer; /* Tanda bisa di-klik */
+}
+
+/* === PENGATURAN MODE ADMIN === */
+
+/* Sembunyikan elemen admin saat mode pembeli */
+.buyer-mode .admin-only {
+    display: none;
+}
+
+/* Tampilkan elemen admin saat mode admin */
+.admin-mode .admin-only {
+    display: block; /* atau 'flex', 'inline', dll. */
+}
+
+/* Sembunyikan elemen pembeli saat mode admin */
+.admin-mode .buyer-only {
+    display: none;
+}
+
+/* Tombol Logout */
+#logout-btn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#logout-btn:hover {
+    background-color: #c93030;
+}
+
+/* Tombol Edit PP */
+#edit-pp-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Kontrol Admin */
+.admin-editor, .admin-controls {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.admin-editor textarea, .admin-controls input {
+    width: 95%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.upload-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.warning-text {
+    font-size: 0.8em;
+    color: #555;
+    font-style: italic;
+}
+.admin-controls button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.admin-controls .edit-pass-btn {
+    background-color: #f44336;
+}
 
 /* === PENGATURAN KHUSUS PRICES LIST (Mode Admin) === */
 
