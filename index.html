@@ -3,39 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mita's Commission</title>
+    <title>Prices List - Mita's Commission</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="buyer-mode"> <header>
-        <h1 id="main-title">MITA'S COMMISSION</h1>
-        
+<body class="buyer-mode">
+
+    <header>
+        <a href="index.html" class="back-link">&larr;</a>
+        <h1 id="main-title">PRICES LIST</h1>
         <button id="logout-btn" class="admin-only">Logout</button>
     </header>
 
     <main>
-        <div class="profile-pic-container">
-            <div class="profile-pic">PP</div>
-            <button id="edit-pp-btn" class="admin-only">+</button>
-            <input type="file" id="pp-upload" style="display: none;">
+        <div class="admin-only add-item-button">
+            <h2>TAMBAHKAN BARANG/+</h2>
         </div>
 
-        <nav class="button-container">
-            <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20beli%20jasa%20mu" target="_blank" class="btn">CHAT SAYA!</a>
+        <div class="price-section">
             
-            <a href="prices.html" class="btn">PRICES LIST</a>
-            <a href="commission.html" class="btn">COMMISSION DONE</a>
-        </nav>
+            <div class="buyer-only">
+                <h2>Contoh Harga 1</h2>
+                <p>Ini adalah deskripsi harga yang dilihat pembeli.</p>
+                <img src="https://via.placeholder.com/300x200?text=Contoh+Gambar" alt="Contoh Harga">
+            </div>
 
-        <div class="social-links">
-            <p>AKUN IG, TIKTOK, YOUTUBE</p>
-            <div class="social-icons">
-                <a href="#" target="_blank">IG</a>
-                <a href="#" target="_blank">TikTok</a>
-                <a href="#" target="_blank">YouTube</a>
+            <div class="admin-only admin-editor admin-price-layout">
+                <div class="item-header">
+                    <p class="label-nama">NAMA BARANG</p>
+                    <button class="delete-btn">HAPUS</button>
+                </div>
+                <input type="text" class="nama-barang-input" value="Contoh Harga 1">
+                
+                <div class="item-content">
+                    <div class="image-area">
+                        <p>CONTOH GAMBAR</p>
+                        <button class="upload-btn">+</button>
+                    </div>
+                    <div class="desc-area">
+                        <p>DESKRIPSI:</p>
+                        <textarea rows="4">Ini adalah deskripsi harga yang dilihat pembeli.</textarea>
+                    </div>
+                </div>
+                <p class="warning-text">(Upload dan Hapus hanya prototipe visual.)</p>
+            </div>
+        </div>
+
+        <div class="price-section">
+            
+            <div class="buyer-only">
+                <h2>Contoh Harga 2</h2>
+                <p>Deskripsi untuk jasa lainnya.</p>
+                <img src="https://via.placeholder.com/300x200?text=Contoh+Gambar+2" alt="Contoh Harga">
+            </div>
+            
+            <div class="admin-only admin-editor admin-price-layout">
+                <div class="item-header">
+                    <p class="label-nama">NAMA BARANG</p>
+                    <button class="delete-btn">HAPUS</button>
+                </div>
+                <input type="text" class="nama-barang-input" value="Contoh Harga 2">
+                
+                <div class="item-content">
+                    <div class="image-area">
+                        <p>CONTOH GAMBAR</p>
+                        <button class="upload-btn">+</button>
+                    </div>
+                    <div class="desc-area">
+                        <p>DESKRIPSI:</p>
+                        <textarea rows="4">Deskripsi untuk jasa lainnya.</textarea>
+                    </div>
+                </div>
+                <p class="warning-text">(Upload dan Hapus hanya prototipe visual.)</p>
             </div>
         </div>
     </main>
-
+    
     <script src="script.js"></script>
 </body>
 </html>
