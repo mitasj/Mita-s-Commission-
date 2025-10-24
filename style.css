@@ -1,0 +1,216 @@
+/* Pengaturan Dasar */
+body {
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    transition: background 1s ease; /* Animasi memudar saat ganti tema */
+}
+
+/* TEMA PEMBELI (Default) */
+body.buyer-mode {
+    background: linear-gradient(135deg, #f8cdda 0%, #d8b4e2 100%);
+}
+
+/* TEMA ADMIN */
+body.admin-mode {
+    background: linear-gradient(135deg, #a0cfff 0%, #c2e9fb 100%);
+}
+
+/* Judul */
+header {
+    margin-bottom: 20px;
+    position: relative;
+}
+h1 {
+    font-size: 1.8em; /* Ukuran sedang */
+    color: #333;
+    cursor: pointer;
+    user-select: none; /* Agar tidak ter-highlight saat di-klik 3x */
+}
+
+/* Foto Profil */
+.profile-pic-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 20px auto 30px auto;
+}
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    background-color: #222;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Tombol */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.btn {
+    background-color: white;
+    color: #333;
+    padding: 15px 20px;
+    border-radius: 50px; /* Bikin lonjong */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+.btn:hover {
+    transform: scale(1.03);
+}
+
+/* Link Akun Sosial Media */
+.social-links {
+    margin-top: 30px;
+    color: #333;
+}
+.social-icons {
+    margin-top: 10px;
+}
+.social-icons a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.social-icons a:hover {
+    text-decoration: underline;
+}
+
+/* Pengaturan Halaman Lain (Prices & Commission) */
+.back-link {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #333;
+}
+.price-section, .gallery-item {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+}
+.price-section img, .gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Galeri Commission Done */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 kolom */
+    gap: 15px;
+}
+.gallery-item img {
+    cursor: pointer; /* Tanda bisa di-klik */
+}
+
+/* === PENGATURAN MODE ADMIN === */
+
+/* Sembunyikan elemen admin saat mode pembeli */
+.buyer-mode .admin-only {
+    display: none;
+}
+
+/* Tampilkan elemen admin saat mode admin */
+.admin-mode .admin-only {
+    display: block; /* atau 'flex', 'inline', dll. */
+}
+
+/* Sembunyikan elemen pembeli saat mode admin */
+.admin-mode .buyer-only {
+    display: none;
+}
+
+/* Tombol Logout */
+#logout-btn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#logout-btn:hover {
+    background-color: #c93030;
+}
+
+/* Tombol Edit PP */
+#edit-pp-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Kontrol Admin */
+.admin-editor, .admin-controls {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.admin-editor textarea, .admin-controls input {
+    width: 95%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.upload-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.warning-text {
+    font-size: 0.8em;
+    color: #555;
+    font-style: italic;
+}
+.admin-controls button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.admin-controls .edit-pass-btn {
+    background-color: #f44336;
+}
