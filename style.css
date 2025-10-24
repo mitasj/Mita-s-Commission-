@@ -214,3 +214,109 @@ h1 {
 .admin-controls .edit-pass-btn {
     background-color: #f44336;
 }
+
+/* === PENGATURAN KHUSUS PRICES LIST (Mode Admin) === */
+
+/* Tombol Tambahkan Barang/+ */
+.add-item-button {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.add-item-button h2 {
+    margin: 0;
+    color: #333;
+    font-size: 1.3em;
+}
+
+/* Layout Kotak Item Harga di Admin Mode */
+.admin-price-layout {
+    background-color: white; /* Kotak jadi warna putih */
+    padding: 15px;
+    border-radius: 10px;
+    color: #333;
+    border: none;
+}
+.admin-price-layout .item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.admin-price-layout .label-nama {
+    font-weight: bold;
+    margin: 0;
+}
+.admin-price-layout .nama-barang-input {
+    width: 95%;
+    border: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 0; /* Hapus padding input */
+    background-color: transparent;
+    color: #333;
+}
+.admin-price-layout .item-content {
+    display: flex;
+    gap: 15px;
+}
+.admin-price-layout .image-area {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 150px; /* Ukuran kotak gambar */
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.admin-price-layout .image-area p {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+.admin-price-layout .desc-area {
+    flex-grow: 1;
+}
+.admin-price-layout .desc-area p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+.admin-price-layout .desc-area textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none; /* Hapus border textarea */
+    resize: none;
+    padding: 5px;
+}
+.admin-price-layout .upload-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delete-btn {
+    background: none;
+    border: none;
+    color: #f44336;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Penyesuaian Konten Pembeli di Prices List */
+.price-section .buyer-only {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    color: #333;
+    text-align: left;
+}
